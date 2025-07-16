@@ -32,4 +32,9 @@ public class OrdenSuperior {
     static Function<Integer, Integer> multiplicador(int factor){
         return x -> x * factor;
     }
+
+
+    /* Crea una función transformarLista que reciba una lista de strings y una función
+    para transformarlas. Usa Function<String, String> y aplica la transformación a cada elemento.
+    */
 }
