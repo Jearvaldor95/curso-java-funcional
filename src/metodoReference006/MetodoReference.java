@@ -1,7 +1,10 @@
 package metodoReference006;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -40,6 +43,12 @@ public class MetodoReference {
                 .stream().map(Lenguaje::new).collect(Collectors.toList());
 
         System.out.println(lenguajeList);
+
+        // Convierte estas lambdas en referencias de método o constructor donde sea posible:
+        Function<String, Integer> conver = s -> Integer.parseInt(s);
+        BiPredicate<String, String> comparar = (a, b) -> a.equalsIgnoreCase(b);
+        Supplier<Set<String>> setFactory = () -> new HashSet<>();
+
 
 
 
